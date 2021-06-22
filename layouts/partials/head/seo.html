@@ -17,6 +17,7 @@
 {{- end -}}
 
 {{- /* Microsoft Clarity */ -}}
+{{- $analytics := .Scratch.Get "analytics" | default dict -}}
 {{- with $analytics.clarity.id -}}
     <script>
         (function(c,l,a,r,i,t,y){
